@@ -27,6 +27,10 @@ Note: If you running out of memory, you can change the -s to lower value, such a
 
 ```cp ./tpch_data/parquet/sf=10/n=1/lineitem/0000.parquet ./data/0000.parquet```
 
+Clean up the generated TPC-H data to free disk space:
+
+```rm -rf tpch_data/parquet/sf=10```
+
 ## Run the script to reach the 20GB data size
 
 ```chmod +x duplicate.sh && ./duplicate.sh 20```
