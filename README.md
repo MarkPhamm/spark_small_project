@@ -29,11 +29,15 @@ Note: If you running out of memory, you can change the -s to lower value, such a
 
 Clean up the generated TPC-H data to free disk space:
 
-```rm -rf tpch_data/parquet/sf=10```
+```rm -rf tpch_data```
 
 ## Run the script to reach the 20GB data size
 
 ```chmod +x duplicate.sh && ./duplicate.sh 20```
+
+Verify the data size:
+
+```du -sh data/```
 
 ## Run the Spark application
 
